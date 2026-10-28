@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Executiva</title>
+  <meta name="description" content="Conteúdo sobre gestão de impressão, equipamentos e produtividade corporativa.">
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Executiva — página inicial">
+      <img src="imagens/logo-executiva.png" alt="Executiva" width="251" height="115">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Menu principal">
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="a-empresa.html" class="nav-link">A Empresa</a>
+      <div class="dropdown">
+        <a href="solucoes.html" class="nav-link">
+          Soluções
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="solucoes.html#locacao-de-impressoras" class="dropdown-item">Locação de Impressoras</a>
+          <a href="solucoes.html#locacao-de-multifuncionais" class="dropdown-item">Locação de Multifuncionais</a>
+          <a href="solucoes.html#outsourcing-de-impressao" class="dropdown-item">Outsourcing de Impressão</a>
+          <a href="gestao-impressao.html" class="dropdown-item">Gestão de Impressão</a>
+          <a href="solucoes.html#outras-solucoes" class="dropdown-item">Outras Soluções</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="equipamentos.html" class="nav-link">
+          Equipamentos
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="dropdown-menu">
+          <div class="dropdown-subgroup">
+            <a href="equipamentos.html" class="dropdown-item dropdown-with-sub">
+              Impressoras
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+            </a>
+            <div class="dropdown-submenu">
+              <a href="equipamentos.html?categoria=impressora-color" class="dropdown-item">Impressoras Coloridas</a>
+              <a href="equipamentos.html?categoria=impressora-pb" class="dropdown-item">Impressoras P&amp;B</a>
+              <a href="equipamentos.html?categoria=multifuncionais-color" class="dropdown-item">Multifuncionais Coloridas</a>
+              <a href="equipamentos.html?categoria=multifuncionais-pb" class="dropdown-item">Multifuncionais P&amp;B</a>
+              <a href="equipamentos.html?categoria=impressoras-3d" class="dropdown-item">Impressoras 3D</a>
+              <a href="equipamentos.html?categoria=ploter" class="dropdown-item">Plotters</a>
+              <a href="equipamentos.html?categoria=scaner" class="dropdown-item">Scanners</a>
+              <a href="equipamentos.html?categoria=etiquetas" class="dropdown-item">Etiquetas</a>
+              <a href="equipamentos.html?categoria=cartoes" class="dropdown-item">Cartões</a>
+              <a href="equipamentos.html?categoria=producao" class="dropdown-item">Produção Gráfica</a>
+            </div>
+          </div>
+          <div class="dropdown-subgroup">
+            <a href="computadores.html" class="dropdown-item dropdown-with-sub">
+              Computadores
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+            </a>
+            <div class="dropdown-submenu">
+              <a href="computadores.html?categoria=desktops" class="dropdown-item">Computadores</a>
+              <a href="computadores.html?categoria=notebooks" class="dropdown-item">Notebooks</a>
+              <a href="computadores.html?categoria=servidores" class="dropdown-item">Servidores</a>
+            </div>
+          </div>
+          <a href="totens.html" class="dropdown-item">Totens &amp; Telas Interativas</a>
+        </div>
+      </div>
+      <a href="sustentabilidade.html" class="nav-link">Sustentabilidade</a>
+      <a href="contato.html" class="nav-link">Contato</a>
+      <a href="https://centralexecutiva.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-hero btn-sm header-cta">
+        Área do Cliente
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      </a>
+    </nav>
+
+    <button type="button" id="menuToggle" class="mobile-toggle" aria-expanded="false" aria-label="Abrir menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="container">
+      <nav aria-label="Menu mobile">
+        <a href="index.html" class="mobile-link">Início</a>
+        <a href="a-empresa.html" class="mobile-link">A Empresa</a>
+        <a href="solucoes.html" class="mobile-link">Soluções</a>
+        <a href="gestao-impressao.html" class="mobile-link">Gestão de Impressão</a>
+        <a href="equipamentos.html" class="mobile-link">Equipamentos</a>
+        <a href="computadores.html" class="mobile-link">Computadores</a>
+        <a href="totens.html" class="mobile-link">Totens & Telas</a>
+        <a href="sustentabilidade.html" class="mobile-link">Sustentabilidade</a>
+        <a href="contato.html" class="mobile-link">Contato</a>
+        <div class="mobile-menu-cta">
+          <a href="https://centralexecutiva.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-hero btn-lg w-full">Área do Cliente</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container" style="max-width:800px;">
+      <p class="section-eyebrow">Blog</p>
+      <h1 id="blogTitle" class="section-title">Carregando...</h1>
+      <p id="blogCategory" class="text-muted" style="margin-bottom:2rem;"></p>
+      <div id="blogContent" class="prose">
+        <p>Conteudo nao encontrado.</p>
+      </div>
+      <div style="margin-top:3rem;">
+        <a href="blog.html" class="btn btn-outline">&larr; Voltar ao Blog</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid footer-4">
+    <div>
+      <img src="imagens/logo-executiva.png" alt="Executiva" class="invert-logo">
+      <p>Soluções inteligentes em impressão e tecnologia para empresas.</p>
+      <a href="https://api.whatsapp.com/send?phone=5571996363349&text=Olá! Contato comercial." target="_blank" rel="noopener noreferrer" class="footer-wa">
+        💬 WhatsApp comercial
+      </a>
+    </div>
+
+    <nav aria-label="Links do rodapé">
+      <h2>Navegação</h2>
+      <ul class="footer-links">
+        <li><a href="a-empresa.html">A Empresa</a></li>
+        <li><a href="solucoes.html">Soluções</a></li>
+        <li><a href="gestao-impressao.html">Gestão de Impressão</a></li>
+        <li><a href="equipamentos.html">Equipamentos</a></li>
+        <li><a href="computadores.html">Computadores</a></li>
+        <li><a href="totens.html">Totens & Telas Interativas</a></li>
+        <li><a href="#">Segmentos</a></li>
+        <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="https://centralexecutiva.com.br" target="_blank" rel="noopener noreferrer">Área do Cliente</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <h2>Contato</h2>
+      <ul class="footer-contact">
+        <li>
+          <span>📍</span>
+          <span>Av. Dom João VI, 89-A, Brotas — Salvador/BA</span>
+        </li>
+        <li>
+          <span>📞</span>
+          <a href="tel:+557121046800" class="hover\:text-primary-fg">(71) 2104-6800</a>
+        </li>
+        <li>
+          <span>✉️</span>
+          <a href="mailto:executiva@executiva.net" class="hover\:text-primary-fg">executiva@executiva.net</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Institucional</h2>
+      <ul class="footer-links">
+        <li><a href="#">Política de Privacidade</a></li>
+        <li><a href="#">Política de Cookies</a></li>
+        <li><a href="#">Termos de Uso</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="currentYear">2026</span> Executiva. Todos os direitos reservados.</p>
+      <p>Locação de impressoras e multifuncionais em Salvador e região.</p>
+    </div>
+  </div>
+</footer>
+
+<a id="whatsappFab" class="whatsapp-fab" href="https://api.whatsapp.com/send?phone=5571996363349&text=Olá! Vim do site da Executiva." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Executiva pelo WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+  <span>Falar no WhatsApp</span>
+</a>
+
+<script defer src="js/main.js"></script>
+<script>
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get('slug');
+    var titleEl = document.getElementById('blogTitle');
+    var catEl = document.getElementById('blogCategory');
+    var contentEl = document.getElementById('blogContent');
+
+    var posts = {
+      'notebook-lenovo-ideapad-3': { title: 'Notebook Lenovo IdeaPad 3', category: 'Equipamentos', content: '<p>O Lenovo IdeaPad 3 e uma opcao versatil para empresas que precisam de equipamentos confiaveis para seu parque de impressao e operacoes diárias.</p><p>Com processadores eficientes e tela de alta definicao, este notebook atende desde tarefas administrativas ate gestao de sistemas de impressao em rede.</p><p>A Executiva oferece solucoes completas que incluem desde impressoras ate os computadores necessarios para gerenciar todo o ambiente de impressao da sua empresa.</p>' },
+      'desktop-thinkcentre-m75q': { title: 'Desktop Lenovo ThinkCentre M75q', category: 'Equipamentos', content: '<p>O ThinkCentre M75q e um desktop compacto da Lenovo, ideal para estacoes de trabalho que demandam performance e confiabilidade em ambientes corporativos.</p><p>Seu format compacto economiza espaco, enquanto a potencia dos processadores AMD Ryzen garante produtividade para gerenciamento de impressao e tarefas pesadas.</p>' },
+      'canon-qualidade-em-materiais-fotograficos': { title: 'Canon: Qualidade em Materiais Fotograficos', category: 'Equipamentos', content: '<p>A Canon e reconhecida mundialmente pela qualidade de seus equipamentos de impressao, atendendo desde escritorios ate estudios fotograficos profissionais.</p><p>Com tecnologia de ponta em impressao a jato de toner e laser, a Canon oferece solucoes para todos os volumes de impressao corporativa.</p>' },
+      'oki-referencia-em-impressao-de-equipamento': { title: 'OKI: Referencia em Impressao de Equipamento', category: 'Equipamentos', content: '<p>A OKI e uma das principais fabricantes de impressoras coloridas e monocromaticas, oferecendo equipamentos robustos para o ambiente corporativo.</p><p>Com tecnologia LED proprietaria, as impressoras OKI entregam qualidade superior com menor consumo de energia.</p>' },
+      'conheca-historia-da-impressora': { title: 'Conheca a Historia da Impressora', category: 'Tecnologia', content: '<p>A historia da impressora comeca em 1969 com a criacao da primeira impressora a jato de tinta. Desde entao, a tecnologia de impressao evoluiu drasticamente.</p><p>De impacto a laser, de monocromatica a colorida, as impressoras se tornaram indispensaveis em qualquer ambiente corporativo.</p><p>Hoje, com a gestao de impressao profissional, empresas podem otimizar custos e aumentar a produtividade significativamente.</p>' },
+      '4-dicas-para-escolher-sua-empresa-de-outsourcing': { title: '4 Dicas Para Escolher Sua Empresa de Outsourcing', category: 'Gestao', content: '<p>Escolher a empresa certa de outsourcing de impressao e fundamental para otimizar custos e garantir a qualidade do servico.</p><p><strong>1. Avalie a experiencia:</strong> Busque empresas com historico comprovado no segmento.</p><p><strong>2. Verifique o parque de equipamentos:</strong> Empresas com variedade de marcas oferecem mais opcoes.</p><p><strong>3. Analise o contrato:</strong> Entenda todos os termos antes de assinar.</p><p><strong>4. Confira o suporte:</strong> Garantia de atendimento rapido e eficiente e essencial.</p>' },
+      'vale-pena-trocar-as-impressoras-proprias-pelas-alugadas': { title: 'Vale a Pena Trocar as Impressoras Proprias Pelas Alugadas?', category: 'Gestao', content: '<p>Muitas empresas se perguntam se vale a pena manter impressoras proprias ou migrar para o modelo de locacao.</p><p>A locacao de impressoras oferece beneficios como: reducao de custos fixos, manutencao incluida, atualizacao constante de equipamentos e eliminacao de problemas com estoque de suprimentos.</p><p>Com a gestao de impressao profissional, sua empresa pode economizar ate 40% dos custos com impressao.</p>' },
+      '7-metodos-eficientes-para-reduzir-custos-de-impressao': { title: '7 Metodos Eficientes Para Reduzir Custos de Impressao', category: 'Gestao', content: '<p>A impressao corporativa representa uma parcela significativa dos custos operacionais de muitas empresas.</p><p><strong>1. Implemente politicas de impressao:</strong> Defina regras claras de uso.</p><p><strong>2. Use impressao duplex:</strong> Imprima frente e verso sempre que possivel.</p><p><strong>3. Monitore o uso:</strong> Acompanhe quem imprime o que e quanto.</p><p><strong>4. Otimize o parque:</strong> Tenha equipamentos adequados para cada necessidade.</p><p><strong>5. Considere o outsourcing:</strong> Deixe a gestao com especialistas.</p><p><strong>6. Use toner remanufaturado:</strong> Quando apropriado, reduza custos com suprimentos.</p><p><strong>7. Digitalize processos:</strong> Reduza a necessidade de impressao.</p>' },
+      'indicios-de-que-sua-empresa-precisa-de-gestao-de-impressos': { title: 'Indicios de Que Sua Empresa Precisa de Gestao de Impressos', category: 'Gestao', content: '<p>Muitas empresas nao percebem quanto gastam com impressao ate realizarem uma auditoria.</p><p>Indicios de que sua empresa precisa de gestao de impressao: custos crescentes com suprimentos, equipamentos frequentemente quebrados, filas de impressao, falta de politicas de uso e ausencia de monitoramento.</p><p>Uma boa gestao de impressao pode transformar esse cenario, trazendo eficiencia e economia.</p>' },
+      'voce-sabe-quanto-sua-empresa-gasta-com-impressoras': { title: 'Voce Sabe Quanto Sua Empresa Gasta com Impresoras?', category: 'Gestao', content: '<p>Segundo estudos, empresas gastam em media de 3% a 5% do faturamento com custos de impressao.</p><p>Esses custos incluem: equipamentos, toner e suprimentos, manutencao, energia e tempo dos funcionarios.</p><p>Com uma analise detalhada do parque de impressao, e possivel identificar oportunidades reais de economia e otimizacao.</p>' },
+      'problemas-graves-de-impressao-para-um-hospital': { title: 'Problemas Graves de Impressao Para um Hospital', category: 'Segmentos', content: '<p>Hospitais e clinicas enfrentam desafios unicos na gestao de impressao: volume alto de documentos, necessidade de impressao rapida e seguranca de dados.</p><p>A ausencia de gestao adequada pode levar a gargalos operacionais, custos elevados e ate riscos a seguranca de informacoes sensiveis de pacientes.</p><p>Solucoes especializadas de outsourcing de impressao para o segmento de saude garantem eficiencia, seguranca e conformidade com a LGPD.</p>' },
+      'bilhetagem-de-impressao-e-gerenciamento': { title: 'Bilhetagem de Impressao e Gerenciamento', category: 'Gestao', content: '<p>A bilhetagem de impressao e uma ferramenta essencial para o controle total do ambiente de impressao corporativo.</p><p>Com ela, e possivel: monitorar em tempo real o uso de impressao por departamento, identificar desperdicios, alocar custos por centro de custo e gerar relatorios detalhados para tomada de decisao.</p><p>Empresas que implementam bilhetagem de impressao reduzem em media 30% dos custos operacionais.</p>' }
+    };
+
+    if (slug && posts[slug]) {
+      var post = posts[slug];
+      document.title = post.title + ' | Blog Executiva';
+      titleEl.textContent = post.title;
+      catEl.textContent = post.category;
+      contentEl.innerHTML = post.content;
+    } else if (slug) {
+      titleEl.textContent = 'Artigo nao encontrado';
+      contentEl.innerHTML = '<p>Desculpe, o artigo solicitado nao foi encontrado.</p>';
+    } else {
+      titleEl.textContent = 'Blog Executiva';
+      contentEl.innerHTML = '<p>Selecione um artigo no <a href="blog.html">Blog</a> para ler o conteudo completo.</p>';
+    }
+  })();
+</script>
+
+</body>
+</html>

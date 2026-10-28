@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog | Gestão de Impressão e Tecnologia | Executiva</title>
+<meta name="description" content="Conteúdos sobre gestão do ambiente de impressão, equipamentos, produtividade e tecnologia para empresas.">
+<link rel="icon" href="imagens/favicon.png" type="image/png">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Executiva — página inicial">
+      <img src="imagens/logo-executiva.png" alt="Executiva — soluções em impressão" width="251" height="115">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Menu principal">
+      <a href="index.html" class="nav-link">Início</a>
+      <a href="a-empresa.html" class="nav-link">A Empresa</a>
+      <div class="dropdown">
+        <a href="solucoes.html" class="nav-link">
+          Soluções
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="solucoes.html#locacao-de-impressoras" class="dropdown-item">Locação de Impressoras</a>
+          <a href="solucoes.html#locacao-de-multifuncionais" class="dropdown-item">Locação de Multifuncionais</a>
+          <a href="solucoes.html#outsourcing-de-impressao" class="dropdown-item">Outsourcing de Impressão</a>
+          <a href="gestao-impressao.html" class="dropdown-item">Gestão de Impressão</a>
+          <a href="solucoes.html#outras-solucoes" class="dropdown-item">Outras Soluções</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="equipamentos.html" class="nav-link">
+          Equipamentos
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+                <div class="dropdown-menu">
+          <div class="dropdown-subgroup">
+            <a href="equipamentos.html" class="dropdown-item dropdown-with-sub">
+              Impressoras
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+            </a>
+            <div class="dropdown-submenu">
+              <a href="equipamentos.html?categoria=impressora-color" class="dropdown-item">Impressoras Coloridas</a>
+              <a href="equipamentos.html?categoria=impressora-pb" class="dropdown-item">Impressoras P&amp;B</a>
+              <a href="equipamentos.html?categoria=multifuncionais-color" class="dropdown-item">Multifuncionais Coloridas</a>
+              <a href="equipamentos.html?categoria=multifuncionais-pb" class="dropdown-item">Multifuncionais P&amp;B</a>
+              <a href="equipamentos.html?categoria=impressoras-3d" class="dropdown-item">Impressoras 3D</a>
+              <a href="equipamentos.html?categoria=ploter" class="dropdown-item">Plotters</a>
+              <a href="equipamentos.html?categoria=scaner" class="dropdown-item">Scanners</a>
+              <a href="equipamentos.html?categoria=etiquetas" class="dropdown-item">Etiquetas</a>
+              <a href="equipamentos.html?categoria=cartoes" class="dropdown-item">Cartões</a>
+              <a href="equipamentos.html?categoria=producao" class="dropdown-item">Produção Gráfica</a>
+            </div>
+          </div>
+          <div class="dropdown-subgroup">
+            <a href="computadores.html" class="dropdown-item dropdown-with-sub">
+              Computadores
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"></polyline></svg>
+            </a>
+            <div class="dropdown-submenu">
+              <a href="computadores.html?categoria=desktops" class="dropdown-item">Computadores</a>
+              <a href="computadores.html?categoria=notebooks" class="dropdown-item">Notebooks</a>
+              <a href="computadores.html?categoria=servidores" class="dropdown-item">Servidores</a>
+            </div>
+          </div>
+          <a href="totens.html" class="dropdown-item">Totens &amp; Telas Interativas</a>
+        </div>
+      </div>
+      <a href="sustentabilidade.html" class="nav-link">Sustentabilidade</a>
+      <a href="contato.html" class="nav-link">Contato</a>
+      <a href="https://centralexecutiva.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-hero btn-sm header-cta">
+        Área do Cliente
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      </a>
+    </nav>
+
+    <button type="button" id="menuToggle" class="mobile-toggle" aria-expanded="false" aria-label="Abrir menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="container">
+      <nav aria-label="Menu mobile">
+        <a href="index.html" class="mobile-link">Início</a>
+        <a href="a-empresa.html" class="mobile-link">A Empresa</a>
+        <a href="solucoes.html" class="mobile-link">Soluções</a>
+        <a href="gestao-impressao.html" class="mobile-link">Gestão de Impressão</a>
+        <a href="equipamentos.html" class="mobile-link">Equipamentos</a>
+        <a href="computadores.html" class="mobile-link">Computadores</a>
+        <a href="totens.html" class="mobile-link">Totens &amp; Telas</a>
+        <a href="sustentabilidade.html" class="mobile-link">Sustentabilidade</a>
+        <a href="contato.html" class="mobile-link">Contato</a>
+        <div class="mobile-menu-cta">
+          <a href="https://centralexecutiva.com.br" target="_blank" rel="noopener noreferrer" class="btn btn-hero">
+            Área do Cliente
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container page-header-inner">
+      <div class="reveal">
+        <p class="page-header-eyebrow">Blog</p>
+        <h1 class="text-4xl font-display">Conteúdos sobre impressão, gestão e tecnologia</h1>
+        <p class="text-muted max-w-2xl">Artigos sobre gestão do ambiente de impressão, dicas para reduzir custos, produtividade, tecnologia e novidades das melhores marcas de equipamentos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padded">
+    <div class="container">
+      <div class="flex flex-wrap gap-2">
+        <button class="blog-category-filter chip chip-active" data-category="todas">Todas</button>
+        <button class="blog-category-filter chip chip-inactive" data-category="Dicas">Dicas</button>
+        <button class="blog-category-filter chip chip-inactive" data-category="Equipamentos">Equipamentos</button>
+        <button class="blog-category-filter chip chip-inactive" data-category="Gestão de impressão">Gestão de impressão</button>
+        <button class="blog-category-filter chip chip-inactive" data-category="Impressão">Impressão</button>
+        <button class="blog-category-filter chip chip-inactive" data-category="Produtividade">Produtividade</button>
+        <button class="blog-category-filter chip chip-inactive" data-category="Tecnologia">Tecnologia</button>
+      </div>
+
+      <div class="grid-3-md gap-6 mt-10">
+
+        <article class="blog-card card-hover" data-category="Equipamentos">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2023/10/Idea-Pad-3-Notebook.png" alt="Notebook Lenovo IdeaPad 3" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Equipamentos</span>
+              <span>·</span>
+              <time datetime="2023-10-18">18 de out, 2023</time>
+            </div>
+            <h2 class="blog-title">Notebook Lenovo IdeaPad 3</h2>
+            <p class="blog-excerpt">RESUMO DAS ESPECIFICAÇÕES Processador Intel® Core™ i5-1135G7 (4C / 8T, 2.4 / 4.2GHz, 8MB) Sistema Operacional Windows® 11 Home Single Language, Portuguese (Brazil).</p>
+            <a href="blog-detalhe.html?slug=notebook-lenovo-ideapad-3" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Equipamentos">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2023/10/ThinkCentre-M75q.png" alt="Desktop ThinkCentre M75q" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Equipamentos</span>
+              <span>·</span>
+              <time datetime="2023-10-18">18 de out, 2023</time>
+            </div>
+            <h2 class="blog-title">Desktop ThinkCentre M75q</h2>
+            <p class="blog-excerpt">RESUMO DAS ESPECIFICAÇÕES Processador AMD Ryzen™ 3 PRO 4350G (4C / 8T, 3.8 / 4.0GHz, 2MB L2 /4MB L3) Sistema Operacional Windows® 10 Pro 64, Português (Brasil).</p>
+            <a href="blog-detalhe.html?slug=desktop-thinkcentre-m75q" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Tecnologia">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2020/06/canon-3.jpg" alt="Canon qualidade em impressão" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Tecnologia</span>
+              <span>·</span>
+              <time datetime="2020-06-04">04 de jun, 2020</time>
+            </div>
+            <h2 class="blog-title">Canon qualidade em materiais fotográficos e equipamentos de impressão</h2>
+            <p class="blog-excerpt">A segurança e qualidade que já conhecemos dos materiais fotográficos da Canon, também se estende para os equipamentos de impressão. Por isso, na Executiva, selecionamos as melhores marcas.</p>
+            <a href="blog-detalhe.html?slug=canon-qualidade-em-materiais-fotograficos" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Produtividade">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2020/06/OKI.png" alt="OKI referência em impressão" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Produtividade</span>
+              <span>·</span>
+              <time datetime="2020-06-04">04 de jun, 2020</time>
+            </div>
+            <h2 class="blog-title">OKI referência em impressão de equipamento</h2>
+            <p class="blog-excerpt">A OKI é uma das empresas referências quando o assunto é equipamento de impressão. Estando presente no Brasil há mais de 2 décadas, ela vem inovando continuamente com soluções e criatividade.</p>
+            <a href="blog-detalhe.html?slug=oki-referencia-em-impressao-de-equipamento" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Tecnologia">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2019/01/Executivaconhecahistoriaimpressorasite.jpg" alt="História da impressora" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Tecnologia</span>
+              <span>·</span>
+              <time datetime="2019-01-30">30 de jan, 2019</time>
+            </div>
+            <h2 class="blog-title">Conheça a história da impressora</h2>
+            <p class="blog-excerpt">Todos reconhecem a importância da impressora nos dias de hoje. Seu maquinário permite a impressão de documentos com uma muita facilidade e rapidez. Cada vez mais essa tecnologia vem se aperfeiçoando.</p>
+            <a href="blog-detalhe.html?slug=conheca-historia-da-impressora" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Gestão de impressão">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2019/01/Executivaescolheroutsourcing.png" alt="4 dicas para escolher outsourcing" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Gestão de impressão</span>
+              <span>·</span>
+              <time datetime="2019-01-17">17 de jan, 2019</time>
+            </div>
+            <h2 class="blog-title">4 dicas para escolher sua empresa de outsourcing</h2>
+            <p class="blog-excerpt">O outsourcing de impressão é a melhor maneira de otimizar os processos produtivos e operacionais da sua empresa e reduzir os custos. Por isso, preparamos uma lista com dicas.</p>
+            <a href="blog-detalhe.html?slug=4-dicas-para-escolher-sua-empresa-de-outsourcing" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Impressão">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2018/09/valeapenatrocarsite.png" alt="Vale a pena trocar impressoras próprias?" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Impressão</span>
+              <span>·</span>
+              <time datetime="2018-09-24">24 de set, 2018</time>
+            </div>
+            <h2 class="blog-title">Vale a pena trocar as impressoras próprias pelas alugadas?</h2>
+            <p class="blog-excerpt">A maior parte das empresas que têm impressoras próprias não costuma praticar a gestão dos custos com as impressões. Esse costume traz prejuízos para a empresa.</p>
+            <a href="blog-detalhe.html?slug=vale-pena-trocar-as-impressoras-proprias-pelas-alugadas" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Impressão">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2018/08/executiva7metodossite.png" alt="7 métodos para reduzir custos" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Impressão</span>
+              <span>·</span>
+              <time datetime="2018-08-22">22 de ago, 2018</time>
+            </div>
+            <h2 class="blog-title">7 métodos eficientes para reduzir custos de impressão</h2>
+            <p class="blog-excerpt">A impressão de documentos é algo muito comum nas organizações, porém muitos gestores não controlam ou analisam o modo como seus funcionários utilizam esse recurso.</p>
+            <a href="blog-detalhe.html?slug=7-metodos-eficientes-para-reduzir-custos-de-impressao" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Dicas">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2018/12/gestaodeimpressos.jpg" alt="Indícios que precisa de gestão" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Dicas</span>
+              <span>·</span>
+              <time datetime="2018-12-18">18 de dez, 2018</time>
+            </div>
+            <h2 class="blog-title">Indícios de que sua empresa precisa de gestão de impressos</h2>
+            <p class="blog-excerpt">Todos os dias, as empresas geram, armazenam e descartam uma grande quantidade de arquivos. E, na contramão do que se imaginava há anos, os impressos não perderam seu lugar.</p>
+            <a href="blog-detalhe.html?slug=indicios-de-que-sua-empresa-precisa-de-gestao-de-impressos" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Impressão">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2018/10/quantogastas.png" alt="Quanto sua empresa gasta?" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Impressão</span>
+              <span>·</span>
+              <time datetime="2018-10-16">16 de out, 2018</time>
+            </div>
+            <h2 class="blog-title">Você sabe quanto sua empresa gasta com impressoras?</h2>
+            <p class="blog-excerpt">O valor gasto com impressões na empresa representa um montante considerável para muitas delas. Em períodos de crise, reduzir custos e saber economizar se tornou ainda mais importante.</p>
+            <a href="blog-detalhe.html?slug=voce-sabe-quanto-sua-empresa-gasta-com-impressoras" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Impressão">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2018/08/Executivaproblemasimpressao.png" alt="Problemas de impressão em hospital" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Impressão</span>
+              <span>·</span>
+              <time datetime="2018-09-03">03 de set, 2018</time>
+            </div>
+            <h2 class="blog-title">Problemas graves de impressão para um Hospital</h2>
+            <p class="blog-excerpt">A radiologia moderna gera economia e eficiência para a área da saúde. Em poucos segundos as imagens já aparecem na tela do monitor para serem analisadas, editadas ou impressas.</p>
+            <a href="blog-detalhe.html?slug=problemas-graves-de-impressao-para-um-hospital" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+        <article class="blog-card card-hover" data-category="Gestão de impressão">
+          <div class="blog-img">
+            <img src="https://executiva.net/wp-content/uploads/2019/01/bilhetagemegerenciaoutsourcing.png" alt="Bilhetagem vs Gerenciamento" loading="lazy">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span class="blog-category">Gestão de impressão</span>
+              <span>·</span>
+              <time datetime="2019-01-10">10 de jan, 2019</time>
+            </div>
+            <h2 class="blog-title">Bilhetagem de Impressão e Gerenciamento de Outsourcing: entenda a diferença</h2>
+            <p class="blog-excerpt">Embora sejam diferentes e tratem sobre assuntos distintos, muitos profissionais de outsourcing de impressão confundem os dois (outsourcing e bilhetagem). Confira!</p>
+            <a href="blog-detalhe.html?slug=bilhetagem-de-impressao-e-gerenciamento" class="blog-link">Ler conteúdo →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band-inner">
+        <div class="cta-band-overlay"></div>
+        <div class="cta-band-content">
+          <h2>Gostaria de mais informações sobre gestão de impressão?</h2>
+          <p>Converse com um de nossos especialistas e descubra como a Executiva pode ajudar a sua empresa a reduzir custos e aumentar a produtividade com soluções de impressão inteligentes.</p>
+          <div class="cta-band-actions">
+            <a href="https://api.whatsapp.com/send?phone=5571996363349&text=Olá,%20li%20um%20conteúdo%20no%20site%20da%20Executiva%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              Falar pelo WhatsApp
+            </a>
+            <a href="orcamento.html" class="btn btn-ondark btn-lg">Solicitar orçamento</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid footer-4">
+    <div class="footer-brand">
+      <img src="imagens/logo-executiva.png" alt="Executiva" width="251" height="115" loading="lazy">
+      <p>Locação de impressoras e multifuncionais com suprimentos, manutenção e suporte incluídos. Soluções de impressão para empresas em Salvador e região.</p>
+      <a href="https://api.whatsapp.com/send?phone=5571996363349&text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es%20de%20loca%C3%A7%C3%A3o%20de%20impressoras%20da%20Executiva." target="_blank" rel="noopener noreferrer" class="footer-wa">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        WhatsApp comercial
+      </a>
+    </div>
+
+    <nav aria-label="Links do rodapé">
+      <h2>Navegação</h2>
+      <ul class="footer-links">
+        <li><a href="a-empresa.html" class="hover:text-primary-fg">A Empresa</a></li>
+        <li><a href="solucoes.html" class="hover:text-primary-fg">Soluções</a></li>
+        <li><a href="equipamentos.html" class="hover:text-primary-fg">Equipamentos</a></li>
+        <li><a href="#" class="hover:text-primary-fg">Segmentos</a></li>
+        <li><a href="sustentabilidade.html" class="hover:text-primary-fg">Sustentabilidade</a></li>
+        <li><a href="blog.html" class="hover:text-primary-fg">Blog</a></li>
+        <li><a href="contato.html" class="hover:text-primary-fg">Contato</a></li>
+        <li>
+          <a href="https://centralexecutiva.com.br" target="_blank" rel="noopener noreferrer" class="hover:text-primary-fg">
+            Área do Cliente
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <h2>Contato</h2>
+      <ul class="footer-contact">
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          <span>Av. Dom João VI, 89-A, Brotas — Salvador/BA</span>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <a href="tel:+557121046800" class="hover:text-primary-fg">(71) 2104-6800</a>
+        </li>
+        <li>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <a href="mailto:executiva@executiva.net" class="hover:text-primary-fg">executiva@executiva.net</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Institucional</h2>
+      <ul class="footer-links">
+        <li><a href="#" class="hover:text-primary-fg">Política de Privacidade</a></li>
+        <li><a href="#" class="hover:text-primary-fg">Política de Cookies</a></li>
+        <li><a href="#" class="hover:text-primary-fg">Termos de Uso</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="currentYear"></span> Executiva. Todos os direitos reservados.</p>
+      <p>Locação de impressoras e multifuncionais em Salvador e região.</p>
+    </div>
+  </div>
+</footer>
+
+<a id="whatsappFab" class="whatsapp-fab" href="https://api.whatsapp.com/send?phone=5571996363349&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20equipe%20da%20Executiva." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Executiva pelo WhatsApp">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+  <span>Falar no WhatsApp</span>
+</a>
+
+<script defer src="js/main.js"></script>
+</body>
+</html>
