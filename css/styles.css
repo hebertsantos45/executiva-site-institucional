@@ -1856,6 +1856,13 @@ footer h2 {
   object-fit: cover;
 }
 
+/* Cards do catálogo na home com foto de produto (fundo recortado) */
+.catalog-card-img--product img {
+  object-fit: contain;
+  padding: 1.5rem;
+  mix-blend-mode: multiply;
+}
+
 .catalog-card-placeholder {
   display: flex;
   align-items: center;
