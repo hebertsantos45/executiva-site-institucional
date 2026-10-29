@@ -663,6 +663,14 @@ ul, ol { list-style: none; }
   border-color: rgba(30, 58, 138, 0.35);
 }
 
+.object-cover {
+  object-fit: cover;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
 .equipment-img {
   display: flex;
   align-items: center;
