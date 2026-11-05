@@ -379,4 +379,70 @@
     delay: 5000,
     visibleByBreakpoint: visibleByBreakpoint
   });
+
+  // =====================
+  // Transicao de imagens (Suporte especializado)
+  // =====================
+  function initFadeSlider(opts) {
+    const root = document.getElementById(opts.rootId);
+    if (!root) return;
+
+    const slides = Array.from(root.querySelectorAll('.media-slide'));
+    if (slides.length < 2) return;
+
+    const dotsWrap = document.getElementById(opts.dotsId);
+    let index = 0;
+    let interval = null;
+
+    const dots = slides.map(function (_, i) {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'media-dot' + (i === 0 ? ' is-active' : '');
+      dot.setAttribute('aria-label', 'Imagem ' + (i + 1) + ' de ' + slides.length);
+      dot.addEventListener('click', function () {
+        go(i);
+        restart();
+      });
+      if (dotsWrap) dotsWrap.appendChild(dot);
+      return dot;
+    });
+
+    function go(i) {
+      index = (i + slides.length) % slides.length;
+      slides.forEach(function (slide, k) {
+        slide.classList.toggle('is-active', k === index);
+      });
+      dots.forEach(function (dot, k) {
+        dot.classList.toggle('is-active', k === index);
+      });
+    }
+
+    function restart() {
+      clearInterval(interval);
+      if (prefersReducedMotion) return;
+      interval = setInterval(function () { go(index + 1); }, opts.delay || 5000);
+    }
+
+    root.addEventListener('mouseenter', function () { clearInterval(interval); });
+    root.addEventListener('mouseleave', restart);
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            restart();
+          } else {
+            clearInterval(interval);
+          }
+        });
+      }, { threshold: 0.35 });
+      observer.observe(root);
+    } else {
+      restart();
+    }
+
+    go(0);
+  }
+
+  initFadeSlider({ rootId: 'supportSlider', dotsId: 'supportDots', delay: 5500 });
 })();

@@ -1939,3 +1939,95 @@ footer h2 {
     flex-basis: 33.3333%;
   }
 }
+
+/* ===========================
+   Suporte - transicao de imagens
+   =========================== */
+.media-slider {
+  position: relative;
+  overflow: hidden;
+  height: 20rem;
+  border-radius: var(--radius-3xl);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-primary-deep);
+}
+
+@media (min-width: 640px) {
+  .media-slider { height: 24rem; }
+}
+
+@media (min-width: 1024px) {
+  .media-slider { height: 28rem; }
+}
+
+.media-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+
+.media-slide.is-active {
+  opacity: 1;
+}
+
+.media-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.media-slider::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4.5rem;
+  background: linear-gradient(to top, rgba(15, 31, 71, 0.45), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.media-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  z-index: 2;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background-color: rgba(15, 31, 71, 0.42);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+.media-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: width 220ms ease, background-color 220ms ease;
+}
+
+.media-dot.is-active {
+  width: 1.5rem;
+  background-color: #ffffff;
+}
+
+.media-dot:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .media-slide { transition: none; }
+}
