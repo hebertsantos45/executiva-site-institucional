@@ -372,15 +372,6 @@
   };
 
   initSlider({
-    trackId: 'advantageTrack',
-    dotsId: 'advantageDots',
-    prevSel: '.advantage-prev',
-    nextSel: '.advantage-next',
-    delay: 4500,
-    visibleByBreakpoint: visibleByBreakpoint
-  });
-
-  initSlider({
     trackId: 'segmentTrack',
     dotsId: 'segmentDots',
     prevSel: '.segment-prev',
