@@ -2031,3 +2031,10 @@ footer h2 {
 @media (prefers-reduced-motion: reduce) {
   .media-slide { transition: none; }
 }
+
+/* ===========================
+   Segmentos - imagem quadrada inteira (sem corte)
+   =========================== */
+.segment-card .catalog-card-img {
+  aspect-ratio: 1 / 1;
+}

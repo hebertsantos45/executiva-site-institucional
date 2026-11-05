@@ -299,7 +299,8 @@
     }
 
     function render() {
-      const percent = (100 / slideCount) * index;
+      const visible = opts.visibleByBreakpoint();
+      const percent = (100 / visible) * index;
       track.style.transform = 'translateX(-' + percent + '%)';
       if (dotsWrap) {
         for (let i = 0; i < dotsWrap.children.length; i++) {
