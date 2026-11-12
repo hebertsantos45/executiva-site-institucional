@@ -6,7 +6,7 @@
 <title>Contato | Executiva — Salvador/BA</title>
 <meta name="description" content="Fale com a Executiva: telefones por setor, e-mails, WhatsApp comercial e técnico e endereço em Brotas, Salvador/BA.">
 <link rel="icon" href="imagens/favicon.png" type="image/png">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=20261112">
 </head>
 <body>
 
@@ -18,7 +18,16 @@
 
     <nav class="desktop-nav" aria-label="Menu principal">
       <a href="index.html" class="nav-link">Início</a>
-      <a href="a-empresa.html" class="nav-link">A Empresa</a>
+            <div class="dropdown">
+        <a href="historia-da-empresa.html" class="nav-link">
+          A Empresa
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </a>
+        <div class="dropdown-menu">
+          <a href="historia-da-empresa.html" class="dropdown-item">História da Empresa</a>
+          <a href="responsabilidade.html" class="dropdown-item">Responsabilidade</a>
+        </div>
+      </div>
       <div class="dropdown">
         <a href="solucoes.html" class="nav-link">
           Soluções
@@ -87,7 +96,9 @@
     <div class="container">
       <nav aria-label="Menu mobile">
         <a href="index.html" class="mobile-link">Início</a>
-        <a href="a-empresa.html" class="mobile-link">A Empresa</a>
+                <a href="historia-da-empresa.html" class="mobile-link">A Empresa</a>
+        <a href="historia-da-empresa.html" class="mobile-link mobile-sublink">História da Empresa</a>
+        <a href="responsabilidade.html" class="mobile-link mobile-sublink">Responsabilidade</a>
         <a href="solucoes.html" class="mobile-link">Soluções</a>
         <a href="gestao-impressao.html" class="mobile-link">Gestão de Impressão</a>
         <a href="equipamentos.html" class="mobile-link">Equipamentos</a>
@@ -265,7 +276,8 @@
     <nav aria-label="Links do rodapé">
       <h2>Navegação</h2>
       <ul class="footer-links">
-        <li><a href="a-empresa.html" class="hover:text-primary-fg">A Empresa</a></li>
+        <li><a href="historia-da-empresa.html" class="hover:text-primary-fg">História da Empresa</a></li>
+        <li><a href="responsabilidade.html" class="hover:text-primary-fg">Responsabilidade</a></li>
         <li><a href="solucoes.html" class="hover:text-primary-fg">Soluções</a></li>
         <li><a href="equipamentos.html" class="hover:text-primary-fg">Equipamentos</a></li>
         <li><a href="#" class="hover:text-primary-fg">Segmentos</a></li>
