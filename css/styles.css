@@ -2523,3 +2523,228 @@ footer h2 {
     aspect-ratio: auto;
   }
 }
+
+
+/* ===========================
+   Responsabilidade
+   =========================== */
+.resp-intro-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .resp-intro-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.25rem;
+  }
+}
+
+.resp-intro-grid .section-description + .section-description {
+  margin-top: 0.9rem;
+}
+
+.resp-gallery {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+.resp-gallery-stack {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.resp-photo {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  background-color: #e8eefb;
+  box-shadow: var(--shadow-soft);
+}
+
+.resp-photo img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.resp-photo:hover img {
+  transform: scale(1.04);
+}
+
+.resp-photo--feature {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-3xl);
+}
+
+.resp-photo-badge {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 255, 255, 0.94);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: var(--shadow-soft);
+}
+
+.resp-photo-badge::before {
+  content: "";
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 9999px;
+  background-color: var(--color-success);
+}
+
+@media (min-width: 900px) {
+  .resp-gallery {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .resp-photo--feature {
+    aspect-ratio: auto;
+    height: 100%;
+  }
+}
+
+.resp-media-note {
+  max-width: 46rem;
+  margin: 2.5rem auto 0;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  text-align: center;
+  color: var(--color-fg);
+}
+
+.resp-body {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2.75rem;
+}
+
+@media (min-width: 900px) {
+  .resp-body {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 3.5rem;
+    align-items: start;
+  }
+}
+
+.resp-copy p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-muted-fg);
+}
+
+.resp-copy p + p {
+  margin-top: 1rem;
+}
+
+.resp-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.6rem;
+  border: 1px solid rgba(30, 58, 138, 0.16);
+  border-radius: var(--radius-2xl);
+  background-image: linear-gradient(135deg, rgba(227, 236, 251, 0.8), rgba(246, 247, 251, 0.9));
+  box-shadow: var(--shadow-soft);
+}
+
+.resp-callout-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  flex: none;
+}
+
+.resp-callout-eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.resp-callout h3 {
+  margin-top: 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.resp-callout p {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.68;
+  color: var(--color-muted-fg);
+}
+
+.resp-callout p.resp-callout-eyebrow {
+  margin-top: 0;
+}
+
+.resp-signature {
+  max-width: 42rem;
+  margin-top: 2.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.resp-signature-brand {
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.resp-signature-line {
+  margin-top: 0.4rem;
+  font-size: 0.9375rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--color-muted-fg);
+}
+
+.mobile-sublink.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.dropdown-item[aria-current="page"] {
+  color: var(--color-primary);
+  background-color: rgba(227, 236, 251, 0.7);
+}
+
+@media (max-width: 520px) {
+  .resp-callout {
+    flex-direction: column;
+    padding: 1.35rem;
+  }
+
+  .resp-media-note {
+    font-size: 1rem;
+  }
+}
